@@ -1,0 +1,21 @@
+﻿<Window x:Class="StudentContactApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Sổ Liên Lạc Điện Tử" Height="600" Width="900">
+    <Grid>
+        <DockPanel>
+            <!-- Sidebar Menu -->
+            <StackPanel DockPanel.Dock="Left" Width="200" Background="#EEE">
+                <Button Content="Thời Khóa Biểu" Name="btnSchedule" Click="BtnSchedule_Click" Height="40" Margin="5"/>
+                <Button Content="Điểm Danh" Name="btnAttendance" Click="BtnAttendance_Click" Height="40" Margin="5"/>
+                <Button Content="Phiếu Đánh Giá" Name="btnEvaluation" Click="BtnEvaluation_Click" Height="40" Margin="5"/>
+                <Button Content="Danh Sách Lớp" Name="btnClassList" Click="BtnClassList_Click" Height="40" Margin="5"/>
+                <Button Content="Giáo Viên Giảng Dạy" Name="btnTeachers" Click="BtnTeachers_Click" Height="40" Margin="5"/>
+                <Button Content="Thông Báo" Name="btnNotifications" Click="BtnNotifications_Click" Height="40" Margin="5"/>
+            </StackPanel>
+
+            <!-- Main Content -->
+            <ContentControl Name="MainContent" Margin="10"/>
+        </DockPanel>
+    </Grid>
+</Window>
